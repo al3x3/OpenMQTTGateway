@@ -61,7 +61,7 @@
 #endif
 
 #ifndef Base_Topic
-#  define Base_Topic "home/"
+#  define Base_Topic "home/garden/"
 #endif
 
 /*-------------DEFINE YOUR NETWORK PARAMETERS BELOW----------------*/
@@ -107,10 +107,10 @@ const byte mac[] = {0xDE, 0xED, 0xBA, 0xFE, 0x54, 0x95}; //W5100 ethernet shield
 
 #if defined(ESPWifiManualSetup) // for nodemcu, weemos and esp8266
 #  ifndef wifi_ssid
-#    define wifi_ssid "wifi ssid"
+#    define wifi_ssid "SkyNet_ExtA"
 #  endif
 #  ifndef wifi_password
-#    define wifi_password "wifi password"
+#    define wifi_password "******"
 #  endif
 #endif
 
@@ -159,13 +159,13 @@ const byte mac[] = {0xDE, 0xED, 0xBA, 0xFE, 0x54, 0x95}; //W5100 ethernet shield
 #endif
 
 #ifndef MQTT_USER
-#  define MQTT_USER "your_username"
+#  define MQTT_USER "mqtt"
 #endif
 #ifndef MQTT_PASS
-#  define MQTT_PASS "your_password"
+#  define MQTT_PASS "par0la"
 #endif
 #ifndef MQTT_SERVER
-#  define MQTT_SERVER "192.168.1.17"
+#  define MQTT_SERVER "192.168.0.135"
 #endif
 #ifndef MQTT_PORT
 #  define MQTT_PORT "1883"
@@ -296,7 +296,7 @@ int lowpowermode = DEFAULT_LOW_POWER_MODE;
 /*-------------DEFINE THE MODULES YOU WANT BELOW----------------*/
 //Addons and module management, uncomment the Z line corresponding to the module you want to use
 
-//#define ZgatewayRF     "RF"       //ESP8266, Arduino, ESP32
+#define ZgatewayRF     "RF"       //ESP8266, Arduino, ESP32
 //#define ZgatewayIR     "IR"       //ESP8266, Arduino,         Sonoff RF Bridge
 //#define ZgatewayLORA   "LORA"       //ESP8266, Arduino, ESP32
 //#define ZgatewayPilight "Pilight" //ESP8266, Arduino, ESP32
@@ -316,11 +316,11 @@ int lowpowermode = DEFAULT_LOW_POWER_MODE;
 //#define ZsensorTSL2561 "TSL2561"  //ESP8266, Arduino, ESP32
 //#define ZsensorBME280  "BME280"   //ESP8266, Arduino, ESP32
 //#define ZsensorHTU21   "HTU21"    //ESP8266, Arduino, ESP32
-//#define ZsensorDHT     "DHT"      //ESP8266, Arduino, ESP32,  Sonoff RF Bridge
+#define ZsensorDHT     "DHT"      //ESP8266, Arduino, ESP32,  Sonoff RF Bridge
 //#define ZsensorDS1820  "DS1820"   //ESP8266, Arduino, ESP32
 //#define ZsensorGPIOKeyCode "GPIOKeyCode" //ESP8266, Arduino, ESP32
 //#define ZsensorGPIOInput "GPIOInput" //ESP8266, Arduino, ESP32
-//#define ZmqttDiscovery "HADiscovery"//ESP8266, Arduino, ESP32, Sonoff RF Bridge
+#define ZmqttDiscovery "HADiscovery"//ESP8266, Arduino, ESP32, Sonoff RF Bridge
 //#define ZactuatorFASTLED "FASTLED" //ESP8266, Arduino, ESP32, Sonoff RF Bridge
 //#define ZboardM5STICKC "M5StickC"
 //#define ZboardM5STICKCP "M5StickCP"
